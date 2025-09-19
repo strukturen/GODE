@@ -12,7 +12,7 @@ GODE is a methodology for the end-to-end discovery of symbolic ordinary differen
 - PySR: code to discover equations with PySR, used version is 0.19.4. (https://github.com/MilesCranmer/PySR)
 - Plots: contains csv-files of the discovered equations by all models and jupyter notebooks to visualize the results
 
-### Getting started
+## Getting started
 To test GODE, please install the requirements of the file 'requirements.txt' in the GODE folder. 
 
 The paper presents three benchmarks: Benchmark 1 on one-dimensional explicit ODEs, Benchmark 2 on linear and nonlinear ODEs, Benchmark 3 on nonlinear ODEs from structural dynamics and Benchmark 4 contains the Silverbox benchmark. 
