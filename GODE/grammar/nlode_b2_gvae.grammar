@@ -1,0 +1,11 @@
+start -> expr '+' start | expr '-' force
+force -> '0' | linear_simple
+expr -> linear_simple '*' Diff | expr '*' Diff
+Diff -> 'diff' '(' Diff ',' 't' ')' | 'u'
+linear_simple -> lin_all | lin_all mop func | lin_all mop func mop func
+lin_all -> term | term mop TV
+TV -> 't' | 't' '^' '2' | 't' '^' '3'
+func -> 'sin' '(' term '*' TV ')' | 'cos' '(' term '*' TV ')' | 'exp' '(' term '*' TV ')' | 'log' '(' term '*' TV ')'
+mop -> '*' | '/'
+term ->  'C'
+Nothing -> None

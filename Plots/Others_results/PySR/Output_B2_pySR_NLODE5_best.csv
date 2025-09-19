@@ -1,0 +1,6 @@
+Predicted solution,Loss
+"(cos(diff(u,t)) + ((sin(cos(diff(u,t) * 0.34886885)) + 1.7046007) * diff(u,t))) - sin(u)",0.86725485
+"(cos(u) + (u + (diff(u,t) + (cos(0.46137792 * u) * diff(u,t))))) - sin(u)",1.6502695
+"((exp(sin(sin(cos(diff(u,t) * 0.36124036)))) - -0.44215882) * diff(u,t)) + (cos(diff(u,t) + -0.4010364) / 0.55054224)",0.9478111
+"(exp(t ^ 1.4304681) + (diff(u,t) * cos(0.40913442 * u))) - sin(u)",1.4875904
+(((6.6301603 * t) - u) + exp((t + -1.8971803) * 6.3392596)) - (sin(u) * t),1.0921808

@@ -1,0 +1,12 @@
+start -> term '*' expr '+' start | term '*' expr
+expr -> '1' | '1' mop '(' small_expr ')' | F '^' int | F '^' int mop '(' small_expr ')' | func | F '^' int mop func | func mop func
+func -> 'sin' '(' inner_func ')' | 'cos' '(' inner_func ')' | 'exp' '(' inner_func ')' | 'log' '(' inner_func ')'
+inner_func -> F mop term
+small_expr -> term '+' F '^' int mop term
+mop -> '*' | '/'
+term ->  num | num '*' var
+F -> 'u'
+var -> 't'
+num -> 'C'
+int -> '1' | '2' | '3' | '4' | '5'
+Nothing -> None
