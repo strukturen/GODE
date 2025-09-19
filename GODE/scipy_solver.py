@@ -12,7 +12,7 @@ from utils import *
 import copy
 
 # Need to adjust time wrapper for silver box example!
-@with_timeout(180)
+@with_timeout(2)
 def solve_implicit_ode(expr, t_low, t_high, fs, y0, order = 1, CHECK_SUCCESS = False, force = None):
     if type(expr) != str:
         expr = str(expr)
@@ -89,7 +89,7 @@ def solve_implicit_ode(expr, t_low, t_high, fs, y0, order = 1, CHECK_SUCCESS = F
         d2u_dt2_scipy = np.array(d2u_dt2_scipy)
         return [sol.t, sol.y[0], sol.y[1], d2u_dt2_scipy]
 
-@with_timeout(5)
+@with_timeout(2)
 def solve_ode(expr, t_low, t_high, fs, y0, order = 1, CHECK_SUCCESS = False, method = 'RK45', normalized = False):
     # only works if it can be put into either u' = F(u) or u'' = F(u, u')
     t_span = (t_low, t_high)  # Time interval
