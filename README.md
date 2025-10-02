@@ -1,6 +1,6 @@
 # Grammar-based Ordinary Differential Equation Discovery (GODE)
 
-This repository contains the code for the paper 'Grammar-based Ordinary Differential Equation Discovery'. The preprint is available under https://arxiv.org/abs/2504.02630. 
+This repository contains the code for the journal paper 'Grammar-based Ordinary Differential Equation Discovery' published in Mechanical Systems & Signal Processing, available under https://doi.org/10.1016/j.ymssp.2025.113395.
 
 GODE is a methodology for the end-to-end discovery of symbolic ordinary differential equations (ODEs). It combines formal grammars with dimensionality reduction and stochastic search to efficiently search high-dimensional combinatorial spaces. Grammars allow us to seed domain knowledge and structure in both the generation of large pretrained libraries as well as inference processes, effectively reducing the exploration space. This method has been validated on first- and second-order linear and nonlinear ODEs with examples from structural dynamics.
 
@@ -26,14 +26,21 @@ python GODE/EquationDiscovery_B1.py 5 3
 Some code snippets from the files 'GODE/parser/cfg_parser.py', 'GODE/model/vae.py' are from the SDVAE implementation: https://github.com/Hanjun-Dai/sdvae, however, the GVAE algorithm follows the original GVAE implementation (https://github.com/mkusner/grammarVAE).
 
 ## Citing
-If you are using the code or find it useful, please consider citing the preprint. The journal paper has been accepted and is currently in-press, once published we will update the citation below.
+If you are using the code or find it useful, please consider citing the journal paper.
 ```
-    @misc{yu_grammar-based_2025,
-      title = {Grammar-based {Ordinary} {Differential} {Equation} {Discovery}},
-      author={Yu, Karin L. and Chatzi, Eleni and Kissas, Georgios},
-      url = {https://arxiv.org/abs/2504.02630},
-	  doi = {10.48550/ARXIV.2504.02630},
-	  publisher = {arXiv},
-	  year = {2025},
-    }
+@article{yu_grammar-based_2025,
+    title = {Grammar-based ordinary differential equation discovery},
+    volume = {240},
+    issn = {08883270},
+    url = {https://linkinghub.elsevier.com/retrieve/pii/S0888327025010969},
+    doi = {10.1016/j.ymssp.2025.113395},
+    language = {en},
+    urldate = {2025-10-02},
+    journal = {Mechanical Systems and Signal Processing},
+    author = {Yu, Karin and Chatzi, Eleni and Kissas, Georgios},
+    month = nov,
+    year = {2025},
+    pages = {113395},
+}
+
 ```
