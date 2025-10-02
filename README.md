@@ -1,6 +1,6 @@
 # Grammar-based Ordinary Differential Equation Discovery (GODE)
 
-This repository contains the code for the journal paper 'Grammar-based Ordinary Differential Equation Discovery' published in Mechanical Systems & Signal Processing, available under https://doi.org/10.1016/j.ymssp.2025.113395.
+This repository contains the code for the journal paper 'Grammar-based Ordinary Differential Equation Discovery' published in Mechanical Systems & Signal Processing by K. Yu, E. Chatzi and G. Kissas, available under https://doi.org/10.1016/j.ymssp.2025.113395.
 
 GODE is a methodology for the end-to-end discovery of symbolic ordinary differential equations (ODEs). It combines formal grammars with dimensionality reduction and stochastic search to efficiently search high-dimensional combinatorial spaces. Grammars allow us to seed domain knowledge and structure in both the generation of large pretrained libraries as well as inference processes, effectively reducing the exploration space. This method has been validated on first- and second-order linear and nonlinear ODEs with examples from structural dynamics.
 
