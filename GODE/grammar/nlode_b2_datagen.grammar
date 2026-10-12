@@ -1,4 +1,4 @@
-start -> linear_simple '*' Diff '*' Diff '*' Diff '-' '(' linear_simple ')' [0.02] | linear_simple '*' Diff '*' Diff '-' '(' linear_simple ')' [0.04] | expr '+' expr '-' '(' force ')' [0.34] | expr '+' expr '+' expr '-' '(' force ')' [0.4] | expr '+' expr '+' expr '+' expr '-' '(' force ')' [0.2]
+start -> linear_simple '*' Diff '*' Diff '*' Diff '-' linear_simple [0.02] | linear_simple '*' Diff '*' Diff '-' linear_simple [0.04] | expr '+' expr '-' force [0.34] | expr '+' expr '+' expr '-' force [0.4] | expr '+' expr '+' expr '+' expr '-' force [0.2]
 force -> '0' [0.4] | linear_simple [0.6]
 expr -> linear_simple '*' Diff [0.8] | linear_simple '*' Diff '*' Diff [0.15] | linear_simple '*' Diff '*' Diff '*' Diff [0.05]
 Diff -> 'diff' '(' 'diff' '(' 'u' ',' 't' ')' ',' 't' ')' [0.25] | 'diff' '(' 'u' ',' 't' ')' [0.25] | 'u' [0.5]
